@@ -19,6 +19,7 @@ class Song
 
  def self.all
    @@all
+   binding.pry
  end
 
  def save
