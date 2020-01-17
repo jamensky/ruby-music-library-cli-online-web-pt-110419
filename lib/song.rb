@@ -48,6 +48,7 @@ class Song
       binding.pry
    else
       self.create(name)
+      binding.pry
    end
  end
 
