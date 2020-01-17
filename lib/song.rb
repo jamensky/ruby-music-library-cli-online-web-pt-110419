@@ -7,7 +7,7 @@ class Song
 
  def initialize(name, artist = nil, genre = nil)
    @name = name
-   @genre = genre
+  # @genre = genre
    self.artist=(artist) if artist
    self.genre=(genre) if genre
    @@all << self
@@ -47,7 +47,6 @@ class Song
    if self.find_by_name(name)
       self.find_by_name(name)
       #binding.pry
-
    else
       self.create(name)
    end
